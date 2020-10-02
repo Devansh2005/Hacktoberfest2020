@@ -26,11 +26,7 @@ int minimum(int A[], int n){
 int main(){
     int A[] = {1, 3, 4, 1}; 
     int size = (sizeof(A)/sizeof(int));
-    int min = minimum(A, size);
-    // printf("%d\n",min);
-    int max = maximum(A, size);
-    // printf("%d\n",max);
-    int sum = min + max;
-    printf("%d",sum);
+    //printing the sum
+    printf("%d",minimum(A, size) + maximum(A, size) );
     return 0;
 }
